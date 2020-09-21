@@ -5,6 +5,7 @@ import numpy as np
 import requests
 from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
+import os
 
 
 class HomeBot:
@@ -13,9 +14,13 @@ class HomeBot:
         self.store = APTEKA.keys()
         self.prices_lst = []
         for d in self.drugs:
-            chrome_options = Options()
+            chrome_options = webdriver.ChromeOptions()
+            chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
             chrome_options.add_argument("user-data-dir=selenium")
-            driver = webdriver.Chrome(chrome_options=chrome_options)
+            chrome_options.add_argument("--headless")
+            chrome_options.add_argument("--disable-dev-shm-usage")
+            chrome_options.add_argument("--no-sandbox")
+            driver = webdriver.Chrome(chrome_options=chrome_options, executable_path=os.environ.get("CHROMEDRIVER_PATH"))
             for k, v in APTEKA.items():
                 result = v[1](url=v[0], driver=driver, drugs=d, apteka=k)
                 self.prices_lst += result
