@@ -15,7 +15,7 @@ class HomeBot:
         for d in self.drugs:
             chrome_options = Options()
             chrome_options.add_argument("user-data-dir=selenium")
-            driver = webdriver.Chrome(chrome_options=chrome_options, executable_path='chromedriver')
+            driver = webdriver.Chrome(chrome_options=chrome_options)
             for k, v in APTEKA.items():
                 result = v[1](url=v[0], driver=driver, drugs=d, apteka=k)
                 self.prices_lst += result
@@ -66,7 +66,7 @@ class HomeBot:
         print(key)
         chrome_options = Options()
         chrome_options.add_argument("user-data-dir=selenium")
-        driver = webdriver.Chrome(chrome_options=chrome_options, executable_path='chromedriver')
+        driver = webdriver.Chrome(chrome_options=chrome_options)
         driver.implicitly_wait(10)
         driver.get(link)
         if key == 'eapteka':
