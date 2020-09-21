@@ -17,7 +17,7 @@ class HomeBot:
             chrome_options = webdriver.ChromeOptions()
             chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
             chrome_options.add_argument("user-data-dir=selenium")
-            chrome_options.add_argument("--headless")
+            # chrome_options.add_argument("--headless")
             chrome_options.add_argument("--disable-dev-shm-usage")
             chrome_options.add_argument("--no-sandbox")
             driver = webdriver.Chrome(chrome_options=chrome_options, executable_path=os.environ.get("CHROMEDRIVER_PATH"))
@@ -69,9 +69,13 @@ class HomeBot:
         link = self.prices_df.loc[index, 'href']
         key = self.prices_df.loc[index, 'apteka']
         print(key)
-        chrome_options = Options()
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
         chrome_options.add_argument("user-data-dir=selenium")
-        driver = webdriver.Chrome(chrome_options=chrome_options)
+        # chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--no-sandbox")
+        driver = webdriver.Chrome(chrome_options=chrome_options, executable_path=os.environ.get("CHROMEDRIVER_PATH"))
         driver.implicitly_wait(10)
         driver.get(link)
         if key == 'eapteka':
