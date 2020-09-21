@@ -1,0 +1,15 @@
+2020/09/18-12:40:19.906 43a4 Reusing MANIFEST C:\Users\1\Documents\GitHub\home_bot\selenium\Profile 1\IndexedDB\https_www.rigla.ru_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/18-12:40:19.907 43a4 Recovering log #4
+2020/09/18-12:40:19.907 43a4 Reusing old log C:\Users\1\Documents\GitHub\home_bot\selenium\Profile 1\IndexedDB\https_www.rigla.ru_0.indexeddb.leveldb/000004.log 
+2020/09/18-12:46:06.011 4fb8 Level-0 table #8: started
+2020/09/18-12:46:06.018 4fb8 Level-0 table #8: 6671 bytes OK
+2020/09/18-12:46:06.035 4fb8 Delete type=0 #4
+2020/09/18-12:46:06.035 4fb8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/09/18-12:46:06.035 4fb8 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x03\x01 \x01\x01\x002\x00\x03\x00\x00\x00\x00\x00\x00\x10@' @ 1233 : 1
+2020/09/18-12:46:06.044 4fb8 Compacting 1@1 + 1@2 files
+2020/09/18-12:46:06.063 4fb8 Generated table #9@1: 266 keys, 16605 bytes
+2020/09/18-12:46:06.063 4fb8 Compacted 1@1 + 1@2 files => 16605 bytes
+2020/09/18-12:46:06.076 4fb8 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/09/18-12:46:06.077 4fb8 Delete type=2 #5
+2020/09/18-12:46:06.077 4fb8 Delete type=2 #8
+2020/09/18-12:46:06.078 4fb8 Manual compaction at level-1 from '\x00\x03\x01 \x01\x01\x002\x00\x03\x00\x00\x00\x00\x00\x00\x10@' @ 1233 : 1 .. (end); will stop at (end)

@@ -1,0 +1,7 @@
+2020/09/18-12:34:43.783 4b74 Reusing MANIFEST C:\Users\1\Documents\GitHub\home_bot\selenium\Profile 1\IndexedDB\https_tula.rigla.ru_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/18-12:34:43.784 4b74 Recovering log #3
+2020/09/18-12:34:43.786 4b74 Reusing old log C:\Users\1\Documents\GitHub\home_bot\selenium\Profile 1\IndexedDB\https_tula.rigla.ru_0.indexeddb.leveldb/000003.log 
+2020/09/18-12:56:31.906 4fb8 Level-0 table #5: started
+2020/09/18-12:56:31.921 4fb8 Level-0 table #5: 39830 bytes OK
+2020/09/18-12:56:31.926 4fb8 Delete type=0 #3
+2020/09/18-12:56:31.926 4fb8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
